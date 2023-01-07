@@ -1,0 +1,49 @@
+---
+import Navbar from "./Navbar.astro";
+import arrowDown from '../images/icon-arrow-down.svg';
+---
+
+<style>
+  /*CSS HEADER START*/
+  header {
+    display: block;
+    width: 99vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url("../images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+  }
+  header a {
+    color: hsl(0, 0%, 100%);
+  }
+
+  header > .title-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40%;
+    margin-top: 4%;
+  }
+  #arrow-icon > .arrow-down {
+    cursor: pointer;
+    animation: upDown 1s infinite;
+  }
+  /*CSS HEADER END*/
+</style>
+
+<header>
+  <Navbar />
+  <section class="title-box">
+    <div class="title-main wrapper">
+      <h1 class="title">Hi! I'am M.Zidane Arkan</h1>
+    </div>
+    <div id="arrow-icon">
+      <img class="arrow-down" src={arrowDown} alt="" />
+    </div>
+  </section>
+</header>

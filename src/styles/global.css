@@ -208,6 +208,50 @@ p {
 }
 /*CSS BODY END*/
 
+h3 {
+  font-family: "Fraunces", serif;
+  font-size: 52px;
+  font-weight: bold;
+}
+main {
+  display: inline-block;
+  width: 99vw;
+  height: auto;
+}
+main > .content {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+main > .content > #content-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  /* justify-content: center;
+        align-items:inherit; */
+}
+
+.col-6 {
+  width: 100%;
+  height: 81vh;
+}
+.col-6 > .col-box {
+  padding: 190px 220px;
+}
+.col-6 > .img-content {
+  width: 100%;
+  height: 81vh;
+}
+.col-box > h3,
+.col-box > p {
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.col-box > p {
+  line-height: 30px;
+}
+
 /*CSS ANIMATION*/
 @keyframes upDown {
   0% {
